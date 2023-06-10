@@ -1,0 +1,12 @@
+.banner-content{
+    width: 100%;
+
+    &_img{
+        width: 100%;
+        aspect-ratio: 1.5;
+    }
+}
+
+.pageContainer{
+    min-height: calc(100vh - 213px);
+}

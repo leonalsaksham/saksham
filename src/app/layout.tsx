@@ -1,5 +1,9 @@
 import './globals.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import '../assets/sass/styles.scss'
 import { Inter } from 'next/font/google'
+import Header from '../../shared/layouts/header'
+import Footer from '../../shared/layouts/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+      </head>
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
