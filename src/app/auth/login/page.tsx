@@ -4,6 +4,9 @@ import React, { useState } from 'react'
 import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap'
 import ReactPlayer from 'react-player';
 import { useRouter } from 'next/navigation'
+import Image from 'next/image';
+import Logo from '../../../assets/images/ring-logo.png'
+
 
 const Login = () => {
   const [s, setS] = useState('')
@@ -28,6 +31,9 @@ const Login = () => {
           </Col>
           <Col md={6}>
             <div className='auth-form'>
+              <div className='text-center mb-3'>
+                <Image src={Logo} className='img-fluid' alt='Logo' />
+              </div>
               <h3>Login to access the system</h3>
               <Form>
                 <InputGroup className="mb-3">

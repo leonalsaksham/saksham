@@ -1,8 +1,11 @@
 'use client';
+import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap'
 import ReactPlayer from 'react-player';
+import Logo from '../../../assets/images/ring-logo.png'
+
 
 const Register = () => {
   const [s, setS] = useState('')
@@ -26,6 +29,9 @@ const Register = () => {
           </Col>
           <Col md={6}>
             <div className='auth-form'>
+              <div className='text-center mb-3'>
+                <Image src={Logo} className='img-fluid' alt='Logo' />
+              </div>
               <h3>Registration Form</h3>
               <Form>
                 <InputGroup className="mb-3">
